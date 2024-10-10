@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "stdlib.h"
 
 #include "iosevka11.qff.h"
-#include "kicub.qgf.h"
+#include "head.qgf.h"
 #include "qp.h"
 
 
@@ -56,7 +56,7 @@ void keyboard_post_init_kb(void) {
     qp_rect(lcd, 0, 0, WIDTH, HEIGHT, 127, 230, 255, true);
 
     
-    image = qp_load_image_mem(gfx_kicub);
+    image = qp_load_image_mem(gfx_head);
     
     if (image != NULL) {
         // qp_drawimage(lcd, 0, 0, image);
